@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Flabbergast | Digital Agency",
+  title: "CodeIllustrated Labs | Digital Agency",
   description: "Building astonishing digital solutions for businesses",
 };
 
