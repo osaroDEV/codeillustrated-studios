@@ -1,65 +1,95 @@
-import Image from "next/image";
+'use client';
+
+import { useState } from 'react';
+import Header from './components/Header';
+import Menu from './components/Menu';
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="relative min-h-screen overflow-hidden bg-black">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source
+          src="https://player.vimeo.com/progressive_redirect/playback/785014447/rendition/1080p/file.mp4?loc=external&signature=5e9f6e52ad3b933f1f63e74cdc1e5f8b72d9bd2271b27c8f9c96b0cc82c07e09"
+          type="video/mp4"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </video>
+
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      <Header onMenuClick={() => setIsMenuOpen(true)} />
+
+      <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+
+      <main className="relative z-10 flex items-center justify-center min-h-screen px-6 py-32">
+        <div className="text-center max-w-5xl">
+          <h2 className="text-white text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6">
+            Building astonishing
+            <br />
+            digital solutions.
+          </h2>
         </div>
       </main>
+
+      <section id="about" className="relative z-10 bg-white py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-4xl md:text-5xl font-light mb-8">
+            We create exceptional websites for businesses
+          </h3>
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl">
+            Our agency specializes in crafting beautiful, functional websites that help businesses
+            establish their digital presence and connect with their audience. From concept to launch,
+            we partner with you to bring your vision to life.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" className="relative z-10 bg-gray-50 py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-4xl md:text-5xl font-light mb-16">Our Services</h3>
+          <div className="grid md:grid-cols-3 gap-12">
+            <div>
+              <h4 className="text-2xl font-medium mb-4">Web Design</h4>
+              <p className="text-gray-600 leading-relaxed">
+                Beautiful, user-friendly designs that capture your brand essence and engage your audience.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-2xl font-medium mb-4">Development</h4>
+              <p className="text-gray-600 leading-relaxed">
+                Modern, responsive websites built with the latest technologies for optimal performance.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-2xl font-medium mb-4">Strategy</h4>
+              <p className="text-gray-600 leading-relaxed">
+                Data-driven strategies to help your business grow and succeed in the digital landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="relative z-10 bg-black text-white py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-4xl md:text-5xl font-light mb-8">
+            Let's build something amazing together
+          </h3>
+          <a
+            href="mailto:hello@flabbergast.com"
+            className="inline-block px-12 py-4 border border-white/30 rounded-full text-sm font-medium tracking-wide hover:bg-white/10 transition-all duration-300"
+          >
+            GET IN TOUCH
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
