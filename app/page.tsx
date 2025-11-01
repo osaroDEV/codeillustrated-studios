@@ -17,7 +17,8 @@ export default function Home() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source
-          src="https://player.vimeo.com/progressive_redirect/playback/785014447/rendition/1080p/file.mp4?loc=external&signature=5e9f6e52ad3b933f1f63e74cdc1e5f8b72d9bd2271b27c8f9c96b0cc82c07e09"
+          // src="https://player.vimeo.com/progressive_redirect/playback/785014447/rendition/1080p/file.mp4?loc=external&signature=5e9f6e52ad3b933f1f63e74cdc1e5f8b72d9bd2271b27c8f9c96b0cc82c07e09"
+          src='/videos/sweep.mp4'
           type="video/mp4"
         />
       </video>
@@ -38,7 +39,7 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="about" className="relative z-10 bg-white py-24 px-6 md:px-12">
+      <section id="about" className="relative z-10 bg-[#588a99] py-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-4xl md:text-5xl font-light mb-8">
             We create exceptional websites for businesses
@@ -51,7 +52,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="relative z-10 bg-gray-50 py-24 px-6 md:px-12">
+      <section id="services" className="relative z-10 bg-[#d65e61] py-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-4xl md:text-5xl font-light mb-16">Our Services</h3>
           <div className="grid md:grid-cols-3 gap-12">
@@ -83,7 +84,7 @@ export default function Home() {
             Let's build something amazing together
           </h3>
           <a
-            href="mailto:hello@flabbergast.com"
+            href="mailto:admin@codeillustrated.com"
             className="inline-block px-12 py-4 border border-white/30 rounded-full text-sm font-medium tracking-wide hover:bg-white/10 transition-all duration-300"
           >
             GET IN TOUCH

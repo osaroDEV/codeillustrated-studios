@@ -8,9 +8,12 @@ export default function Header({ onMenuClick }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-8 md:px-12">
       <div className="flex items-center justify-between">
-        <h1 className="text-white text-lg md:text-xl font-bold tracking-wide">
+        {/* <h1 className="text-white text-lg md:text-xl font-bold tracking-wide">
           CodeIllustrated Labs
-        </h1>
+        </h1> */}
+        <h1 className="hidden sm:block lg:text-xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+              CodeIllustrated Labs
+            </h1>
 
         <div className="flex items-center gap-4">
           <button

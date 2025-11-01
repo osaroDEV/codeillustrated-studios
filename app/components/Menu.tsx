@@ -76,7 +76,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               Projects
             </p>
             <ul className="space-y-3">
-              {['World', 'World app', 'Jellybean', 'Nolla', 'Final Offer', 'Oteria'].map((item) => (
+              {['World', 'World app', 'Oteria'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(' ', '-')}`}
