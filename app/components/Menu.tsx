@@ -16,9 +16,9 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
 
       <div className="relative z-10 px-6 py-8 md:px-12">
         <div className="flex items-center justify-between">
-          <h1 className="text-white text-lg md:text-xl font-bold tracking-wide">
-            CodeIllustrated Labs
-          </h1>
+          <h1 className="lg:text-xl font-bold bg-linear-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+              CodeIllustrated Labs
+            </h1>
 
           <div className="flex items-center gap-4">
             <button
@@ -41,24 +41,6 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               </svg>
             </button>
 
-            {/* <button
-              className="hidden md:flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
-              aria-label="Copy link"
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="text-white"
-              >
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-            </button> */}
-
             <a
               href="#contact"
               className="hidden md:block text-white text-sm font-medium hover:opacity-70 transition-opacity"
@@ -69,18 +51,18 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
         </div>
       </div>
 
-      <div className="relative z-10 flex items-start justify-center pt-12 md:pt-20 px-6">
+      <div className="relative z-10 flex items-start justify-center pt-12 md:pt-20 px-6 h-[calc(100vh-5rem)] overflow-y-auto">
         <nav className="w-full max-w-4xl">
           <div className="mb-16">
             <p className="text-white/50 text-xs font-medium tracking-widest mb-6 uppercase">
               Projects
             </p>
             <ul className="space-y-3">
-              {['World', 'World app', 'Oteria'].map((item) => (
+              {['Michael Stevens Solicitors', 'Coding Tutor'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(' ', '-')}`}
-                    className="block text-white text-4xl md:text-6xl font-light hover:opacity-70 transition-opacity"
+                    className="block text-white text-4xl font-light hover:opacity-70 transition-opacity"
                     onClick={onClose}
                   >
                     {item}
@@ -90,7 +72,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             </ul>
           </div>
 
-          <div className="mb-12">
+          <div className="mb-10">
             <p className="text-white/50 text-xs font-medium tracking-widest mb-6 uppercase">
               More
             </p>
@@ -99,7 +81,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="block text-white text-2xl md:text-4xl font-light hover:opacity-70 transition-opacity"
+                    className="block text-white text-2xl font-light hover:opacity-70 transition-opacity"
                     onClick={onClose}
                   >
                     {item}
