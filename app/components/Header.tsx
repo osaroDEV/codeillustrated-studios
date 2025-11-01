@@ -11,7 +11,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
         {/* <h1 className="text-white text-lg md:text-xl font-bold tracking-wide">
           CodeIllustrated Labs
         </h1> */}
-        <h1 className="hidden sm:block lg:text-xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+        <h1 className="lg:text-xl font-bold bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
               CodeIllustrated Labs
             </h1>
 
