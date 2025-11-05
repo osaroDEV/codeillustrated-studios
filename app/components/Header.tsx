@@ -1,5 +1,9 @@
 'use client';
 
+import Link from "next/link";
+
+
+
 interface HeaderProps {
   onMenuClick: () => void;
 }
@@ -8,14 +12,14 @@ export default function Header({ onMenuClick }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-8 md:px-12">
       <div className="flex items-center justify-between">
-        <h1 className="lg:text-xl font-bold bg-linear-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
+        <Link href='/' className="lg:text-xl font-bold bg-linear-to-r from-red-600 to-orange-500 bg-clip-text text-transparent">
               CodeIllustrated Labs
-            </h1>
+        </Link>
 
         <div className="flex items-center gap-4">
           <button
             onClick={onMenuClick}
-            className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 text-white hover:bg-white/20 transition-all duration-300"
+            className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-6 py-3 text-white hover:bg-white/20 transition-all duration-300"
             aria-label="Open menu"
           >
             <span className="text-sm font-medium tracking-wide">MENU</span>

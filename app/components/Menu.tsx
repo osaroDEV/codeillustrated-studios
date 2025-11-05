@@ -23,7 +23,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
           <div className="flex items-center gap-4">
             <button
               onClick={onClose}
-              className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 text-white hover:bg-white/20 transition-all duration-300"
+              className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-6 py-3 text-white hover:bg-white/20 transition-all duration-300"
               aria-label="Close menu"
             >
               <span className="text-sm font-medium tracking-wide">MENU</span>
@@ -77,7 +77,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               More
             </p>
             <ul className="space-y-3">
-              {['Culture', 'Careers', 'Services'].map((item) => (
+              {['Culture', 'Services'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
