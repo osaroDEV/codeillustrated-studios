@@ -12,22 +12,22 @@ const accordionData: AccordionItem[] = [
   {
     id: '01',
     title: 'Mobile & Web Development',
-    items: ['React & Next.js Development', 'Mobile App Development'],
+    items: ['Scalable and Stable Web & Mobile Architecture', 'API & CMS solutions that power dynamic content and integrations'],
   },
   {
     id: '02',
     title: 'Strategy',
-    items: ['Digital Strategy Planning', 'Market Research & Analysis'],
+    items: ['Product Consulting', 'Idea Validation', 'Product Discovery', 'Business Strategy'],
   },
   {
     id: '03',
     title: 'Product design',
-    items: ['UX/UI Design', 'Prototyping & Wireframing'],
+    items: ['User Research', 'UX Design', 'UI Design', 'Prototyping and Testing', 'Design Systems', 'User Flows & Wireframing'],
   },
   {
     id: '04',
     title: 'Visual design',
-    items: ['Brand Identity Design', 'Design Systems'],
+    items: ['Brand Identity Design', 'Illustration', 'Motion design'],
   },
 ];
 
@@ -53,12 +53,12 @@ export default function Accordion() {
               <span className="text-sm font-medium text-gray-400">
                 {item.id}
               </span>
-              <h3 className="text-xl md:text-2xl font-normal text-black">
+              <h3 className="text-xl md:text-2xl font-normal text-white">
                 {item.title}
               </h3>
             </div>
             <div
-              className={`text-2xl font-light transition-transform duration-300 ${
+              className={`text-4xl font-light transition-transform duration-300 ${
                 openIndex === index ? 'rotate-45' : 'rotate-0'
               }`}
             >
@@ -75,9 +75,9 @@ export default function Accordion() {
               {item.items.map((subItem, subIndex) => (
                 <p
                   key={subIndex}
-                  className="text-base text-gray-600 leading-relaxed"
+                  className="text-base text-gray-200 leading-relaxed"
                 >
-                  • {subItem}
+                  {subItem}
                 </p>
               ))}
             </div>
