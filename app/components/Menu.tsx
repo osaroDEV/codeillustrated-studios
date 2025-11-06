@@ -1,5 +1,7 @@
 'use client';
 
+import Link from "next/link";
+
 interface MenuProps {
   isOpen: boolean;
   onClose: () => void;
@@ -77,15 +79,15 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               More
             </p>
             <ul className="space-y-3">
-              {['Culture', 'Services'].map((item) => (
+              {['Works', 'Services'].map((item) => (
                 <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase()}`}
+                  <Link
+                    href={`/${item.toLowerCase()}`}
                     className="block text-white text-2xl font-light hover:opacity-70 transition-opacity"
                     onClick={onClose}
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
