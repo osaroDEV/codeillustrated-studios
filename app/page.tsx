@@ -58,7 +58,7 @@ export default function Home() {
                 <h4 className="text-2xl md:text-3xl font-light text-white">Mobile & Web Development</h4>
               </div>
 
-              <Link href='/services' className="w-full md:w-auto px-12 py-4 border border-black rounded-full text-sm font-medium tracking-wide hover:bg-black text-black hover:text-white transition-all duration-300 mt-8">
+              <Link href='/services' className="w-full md:w-auto px-12 py-4 border border-gray-50 rounded-lg text-sm font-medium tracking-wide hover:bg-black text-white hover:text-white transition-all duration-300 mt-20">
                 LEARN MORE
               </Link>
             </div>

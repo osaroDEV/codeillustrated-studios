@@ -58,7 +58,7 @@ export default function Accordion() {
               </h3>
             </div>
             <div
-              className={`text-4xl font-light transition-transform duration-300 ${
+              className={`text-4xl font-light transition-transform duration-300 text-white ${
                 openIndex === index ? 'rotate-45' : 'rotate-0'
               }`}
             >
