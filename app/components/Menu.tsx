@@ -43,12 +43,12 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               </svg>
             </button>
 
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="hidden md:block text-white text-sm font-medium hover:opacity-70 transition-opacity"
             >
               CONTACT
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -93,12 +93,13 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             </ul>
           </div>
 
-          <button
+          <Link
+            href="/contact"
             onClick={onClose}
-            className="w-full md:w-auto px-12 py-4 border border-white/30 rounded-full text-white text-sm font-medium tracking-wide hover:bg-white/10 transition-all duration-300"
+            className="inline-block w-full md:w-auto px-12 py-4 border border-white/30 rounded-full text-white text-sm font-medium tracking-wide hover:bg-white/10 transition-all duration-300 text-center"
           >
             CONTACT
-          </button>
+          </Link>
         </nav>
       </div>
     </div>

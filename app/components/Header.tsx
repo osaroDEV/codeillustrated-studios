@@ -30,12 +30,12 @@ export default function Header({ onMenuClick }: HeaderProps) {
             </div>
           </button>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="hidden md:block text-white text-sm font-medium hover:opacity-70 transition-opacity"
           >
             CONTACT
-          </a>
+          </Link>
         </div>
       </div>
     </header>
