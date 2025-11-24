@@ -24,36 +24,36 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen bg-white py-20 md:py-32 px-6 md:px-12 lg:px-20">
+    <section className="bg-[#1E5A6D] py-20 md:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-tight text-black mb-20">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-tight text-white mb-20">
           Tell us about your project
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           <div className="space-y-12">
             <div>
-              <p className="text-base md:text-lg leading-relaxed text-gray-800">
+              {/* <p className="text-base md:text-lg leading-relaxed text-gray-800">
                 Zavrtnica 17
+              </p> */}
+              <p className="text-base md:text-lg leading-relaxed text-gray-200">
+                London
               </p>
-              <p className="text-base md:text-lg leading-relaxed text-gray-800">
-                10 000 Zagreb
-              </p>
-              <p className="text-base md:text-lg leading-relaxed text-gray-800">
-                Croatia
+              <p className="text-base md:text-lg leading-relaxed text-gray-200">
+                United Kingdom
               </p>
             </div>
 
             <div>
-              <p className="text-base md:text-lg leading-relaxed text-gray-800">
-                info@flabbergast.agency
+              <p className="text-base md:text-lg leading-relaxed text-gray-200">
+                admin@codeillustrated.com
               </p>
-              <p className="text-base md:text-lg leading-relaxed text-gray-800">
-                +385 91 400 7079
+              <p className="text-base md:text-lg leading-relaxed text-gray-200">
+                +44 7405 786 279
               </p>
             </div>
 
-            <div className="pt-12">
+            {/* <div className="pt-12">
               <div className="w-full max-w-sm aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -61,11 +61,11 @@ export default function ContactPage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
-            <p className="text-base md:text-lg leading-relaxed text-gray-800 mb-12">
+            <p className="text-base md:text-lg leading-relaxed text-gray-200 mb-12">
               Ready when you are - drop us a line and let's see if we can help
               you out.
             </p>
@@ -74,7 +74,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-xs uppercase tracking-wider text-gray-600 mb-3"
+                  className="block text-xs uppercase tracking-wider text-gray-300 mb-3"
                 >
                   YOUR NAME
                 </label>
@@ -93,7 +93,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-xs uppercase tracking-wider text-gray-600 mb-3"
+                  className="block text-xs uppercase tracking-wider text-gray-300 mb-3"
                 >
                   YOUR EMAIL
                 </label>
@@ -112,7 +112,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-xs uppercase tracking-wider text-gray-600 mb-3"
+                  className="block text-xs uppercase tracking-wider text-gray-300 mb-3"
                 >
                   YOUR MESSAGE
                 </label>
@@ -131,7 +131,7 @@ export default function ContactPage() {
               <div className="pt-8">
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 border-2 border-black rounded-lg text-sm font-bold tracking-wide uppercase hover:bg-black hover:text-white transition-all duration-300"
+                  className="w-full px-8 py-4 border-2 border-white rounded-lg text-sm font-bold tracking-wide uppercase hover:bg-linear-to-r hover:from-red-600 hover:to-orange-500 hover:text-white transition-all duration-300"
                 >
                   SEND MESSAGE
                 </button>
