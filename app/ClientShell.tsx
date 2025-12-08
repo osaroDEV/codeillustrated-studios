@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Menu from './components/Menu';
+import { Footer } from './components/Footer';
 
 export default function ClientShell({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ export default function ClientShell({ children }: { children: React.ReactNode })
       <Header onMenuClick={() => setIsMenuOpen(true)} />
       <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       {children}
+      <Footer />
     </div>
   );
 }

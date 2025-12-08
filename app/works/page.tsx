@@ -2,8 +2,8 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="relative z-10 bg-[#1E5A6D] py-20 md:py-32 px-6 md:px-12 lg:px-20">
-      <div className="mt-32 py-16">
+    <section className="bg-[#1E5A6D] py-20 md:py-32 px-6 md:px-12 lg:px-20">
+      <div className="py-16">
         <div className="mb-16">
           <p className="text-sm uppercase tracking-wider text-white/60 mb-4">
             OUR WORK

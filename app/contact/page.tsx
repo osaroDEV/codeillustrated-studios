@@ -24,7 +24,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="bg-[#1E5A6D] py-20 md:py-32 px-6 md:px-12 lg:px-20">
+    <section className="bg-[#1E5A6D] py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-tight text-white mb-20">
           Tell us about your project
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="John Doe"
-                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors"
+                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-white placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors"
                   required
                 />
               </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="johndoe@mail.com"
-                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors"
+                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-white  placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors"
                   required
                 />
               </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   placeholder="Type something..."
                   rows={4}
-                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors resize-none"
+                  className="w-full bg-transparent border-b border-gray-300 py-3 text-base text-white  placeholder-gray-400 focus:outline-none focus:border-gray-800 transition-colors resize-none"
                   required
                 />
               </div>

@@ -28,7 +28,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-6 py-3 text-white hover:bg-white/20 transition-all duration-300"
               aria-label="Close menu"
             >
-              <span className="text-sm font-medium tracking-wide">MENU</span>
+              <span className="text-sm font-bold tracking-wide">MENU</span>
               <svg
                 width="20"
                 height="20"
@@ -45,7 +45,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
 
             <Link
               href="/contact"
-              className="hidden md:block text-white text-sm font-medium hover:opacity-70 transition-opacity"
+              className="hidden md:block text-white text-sm font-bold hover:opacity-70 transition-opacity"
             >
               CONTACT
             </Link>
