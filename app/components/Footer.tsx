@@ -1,9 +1,9 @@
 import Link from "next/link"
 
 const projectLinks = [
-  { name: "World", href: "#" },
-  { name: "World app", href: "#" },
-  { name: "Oteria", href: "#" },
+  { name: "Michael Stevens Solicitors", href: "/works/mss" },
+  { name: "Coding App", href: "/works/coding-app" },
+  { name: "Ritzy Healthcare", href: "/works/ritzy-health" },
 ]
 
 const aboutLinks = [
